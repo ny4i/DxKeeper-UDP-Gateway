@@ -81,6 +81,19 @@ applications</a>.<br><br>If the Gateway's Main window does not look like this</f
 obsolete version.</span><font face="Arial"><br></font></p>
 <p style="margin-bottom: 5"><font face="Arial"><b>Configuring N1MM+</b></font></p>
 <p class="auto-style4">
+<h2>Configuring Logging Software to send UDP Log Records to the Gateway</h2>
+While the initial case for this program was processing N1MM UDP messages, several logging package have adopted the "N1MM Standard" for a UDP message to send log records in real-time. Some of the programs that send a ContactInfo packet in the same N1MM format include:
+<ul>
+ 	<li>N1MM+</li>
+ 	<li>TR4W</li>
+ 	<li>Ham Radio Deluxe (HRD)</li>
+</ul>
+Note there is another UDP interface that allows N1MM to receive UDP messages to log data. The Gateway also supports this standard but instead of N1MM being the target for the contacts, DXKeeper can be. This is supported to specifically allow SDR-Control to send messages from its built-in logger to DXKeeper. But any program that can send log records into N1MM, can also use this facility to log records into DXKeeper. This data is typically sent to N1MM on port 2333 for WSJT-X but the Gateway will also process those messages sent on port 12060. The follow programs support this interface
+<ul>
+ 	<li>SDR-Control (by DL8MRE for MAC and IOS for remote operation of various radios)</li>
+ 	<li>WSJT-X</li>
+</ul>
+	
 <a href="https://n1mmwp.hamdocs.com/setup/software-setup/#multiple-call-signs">
 Configure N1MM+ to use the correct callsign</a>.</p>
 <p class="auto-style4">Display the <font face="Arial"> &nbsp;<a href="https://n1mmwp.hamdocs.com/setup/interfacing/">N1MM+</a>
