@@ -1,0 +1,317 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>N1MM-DXKeeper Gateway Online Help</title>
+<style type="text/css">
+.auto-style1 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.auto-style2 {
+	font-family: "Courier New", Courier, monospace;
+}
+.auto-style4 {
+	font-family: Arial;
+	margin-bottom: 5;
+}
+.auto-style5 {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 0in;
+	margin-right: 0in;
+	margin-top: 0in;
+	margin-bottom: .0001pt;
+}
+.auto-style6 {
+	font-family: "Courier New";
+}
+.auto-style7 {
+	font-family: Arial;
+}
+.auto-style9 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-bottom: 5;
+}
+.auto-style11 {
+	font-family: Arial;
+	font-weight: normal;
+	margin-bottom: 5;
+}
+.auto-style12 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	margin-bottom: 5;
+}
+</style>
+</head>
+
+<body>
+
+<h2 align="center"><font face="Arial" color="#CC0000">N1MM-DXKeeper Gateway Online Help</font></h2>
+
+<p><font face="Arial">The 
+<a href="https://n1mmwp.hamdocs.com/setup/interfacing/">N1MM</a>
+to </font><font face="Arial"><a href="https://www.dxlabsuite.com/dxkeeper/">DXKeeper</a>
+Gateway enables each QSO logged in 
+<a href="https://n1mmwp.hamdocs.com/setup/interfacing/">N1MM+</a> 
+or N1MM
+to be immediately logged to </font><font face="Arial"><a href="https://www.dxlabsuite.com/dxkeeper/">DXKeeper</a>, 
+and to direct <a href="https://www.dxlabsuite.com/dxview/">DXView</a> and
+<a href="https://www.dxlabsuite.com/pathfinder/">Pathfinder</a> to &quot;lookup&quot; the 
+logged callsign; you can configure the Gateway to direct DXView to display all 
+previous QSOs with the logged callsign. </font></p>
+<p><font face="Arial">The Gateway is free, and contains no advertising; commercial use is expressly
+forbidden.</font></p>
+<h4 style="margin-bottom: 5"><font face="Arial">Installation</font></h4>
+<p style="margin-bottom: 5"><font face="Arial">To install the Gateway, download
+its <a href="https://www.dxlabsuite.com/N1MM-DXKeeper/N1MM_DXK_GW.zip">zip
+archive</a>, and extract the application it contains into the folder of your
+choice. This application will only work correctly if you have <a href="https://www.dxlabsuite.com/dxkeeper/">DXKeeper</a>
+installed.&nbsp; You can create a desktop icon to start the Gateway, or you can
+configure the <a href="https://www.dxlabsuite.com/Launcher/">DXLab Launcher</a>
+to <a href="https://www.dxlabsuite.com/Launcher/Help/Configuration.htm#Specifying a non-DXLab application's pathname">automatically
+start the Gateway</a> with your <a href="https://www.dxlabsuite.com/">DXLab
+applications</a>.<br><br>If the Gateway's Main window does not look like this</font></p>
+<p style="margin-bottom: 5">
+<img height="336" src="N1MM-DXKeeper%20Gateway.jpg" width="472"></p>
+<p style="margin-bottom: 5"><span class="auto-style7">then you are running an 
+obsolete version.</span><font face="Arial"><br></font></p>
+<p style="margin-bottom: 5"><font face="Arial"><b>Configuring N1MM+</b></font></p>
+<p class="auto-style4">
+<a href="https://n1mmwp.hamdocs.com/setup/software-setup/#multiple-call-signs">
+Configure N1MM+ to use the correct callsign</a>.</p>
+<p class="auto-style4">Display the <font face="Arial"> &nbsp;<a href="https://n1mmwp.hamdocs.com/setup/interfacing/">N1MM+</a>
+<strong>Configurer</strong> window by opening the</font> <font face="Arial">&nbsp;<a href="https://n1mmwp.hamdocs.com/setup/interfacing/">N1MM+</a></font> 
+Config menu and selecting the <strong>Configure Ports ...</strong> command. On 
+the <strong>Configurer</strong> window's <strong>Broadcast Data</strong> tab, 
+</p>
+<ol>
+	<li>
+	<p class="auto-style4">check the <strong>Contacts</strong> box, and set the
+	<strong>IP Addr: PortIP 
+Addr:Port</strong> box to its right to&nbsp; your computer's IPv4 address, 
+followed by a colon and the port number <span class="auto-style6">12060</span><span class="auto-style1">; 
+	if your computer's IPv4 address is <font face="Courier New">
+	<span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">
+	192.168.1.11</span></font>, then you should specify </span>&nbsp;<font face="Courier New"><span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">192.168.1.11:12060</span></font></p>
+	</li>
+	<li>
+	<p class="auto-style4">check the <strong>External Callsign Lookup</strong> 
+	box, and set the <strong>IP Addr: PortIP 
+Addr:Port</strong> box to its right to&nbsp; your computer's IPv4 address, 
+followed by a colon and the port number <span class="auto-style6">12060</span><span class="auto-style1">; 
+	if your computer's IPv4 address is <font face="Courier New">
+	<span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">
+	192.168.1.11</span></font>, then you should specify </span>&nbsp;<font face="Courier New"><span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">192.168.1.11:12060</span></font></p>
+	</li>
+</ol>
+<p style="margin-bottom: 5"><font face="Arial">To determine your computer's IPv4
+address, direct windows top open a <strong>Cmd</strong> window, enter the </font><font face="Courier New"><span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">ipconfig</span></font><font face="Arial">
+command, and strike the enter key; your computer's IPv4 address will be included
+in the results displayed by this command.<br></font></p>
+<p class="auto-style5">For more information about N1MM+'s UDP Broadcasts, go
+<a href="https://n1mmwp.hamdocs.com/appendices/external-udp-broadcasts/">here</a>.</p>
+<p class="auto-style5">&nbsp;</p>
+<p style="margin-bottom: 5"><font face="Arial"><b>Configuring N1MM</b></font></p>
+<p style="margin-bottom: 5"><font face="Arial">Configure N1MM
+to send an external UDP broadcast whenever it logs a QSO by terminating
+N1MM (if running), and then using a text
+editor like Notepad to place the following entries in the </font><font face="Courier New">N1MM
+Logger.ini</font><font face="Arial"> file:</font></p>
+<p style="margin-bottom: 5"><font face="Courier New"><span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">[ExternalBroadcast]<span class="Apple-converted-space">&nbsp;</span></span><br style="color: rgb(51, 51, 51); font-family: 'Trebuchet MS', sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">DestinationIPs=127.0.0.1</span><br style="color: rgb(51, 51, 51); font-family: 'Trebuchet MS', sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">DestinationPort=12060<span class="Apple-converted-space">&nbsp;</span></span><br style="color: rgb(51, 51, 51); font-family: 'Trebuchet MS', sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">IsBroadcastContact=True<span class="Apple-converted-space">&nbsp;</span></span></font></p>
+<p style="margin-bottom: 5"><font face="Arial">If an </font><font face="Courier New"><span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">[ExternalBroadcast]</span></font><font face="Arial">section
+is already present in the </font><font face="Courier New">N1MM Logger.ini</font><font face="Arial">
+file, add any of the </font><font face="Courier New"><span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">DestinationIPs</span><span style="color: rgb(51, 51, 51); font-family: 'Trebuchet MS', sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline; float: none">,
+</span><span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">DestinationPort
+</span><span style="color: rgb(51, 51, 51); font-family: 'Trebuchet MS', sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline; float: none">or
+</span><span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">IsBroadcastContact</span><span style="color: rgb(51, 51, 51); font-family: 'Trebuchet MS', sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline; float: none">
+statements that are not already present in that section. After modifying </span></font><font face="Courier New">N1MM
+Logger.ini</font><font face="Arial">, save your changes and restart N1MM.
+Additional information about N1MM's external UDP broadcasts is available <a href="https://n1mmwp.hamdocs.com/appendices/external-udp-broadcasts/">here</a>.</font></p>
+<p style="margin-bottom: 5"><font face="Arial">In some cases, the Gateway will
+not receive N1MM's UDB broadcast unless you include your computer's IPv4 address
+in the </font><font face="Courier New"><span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">[ExternalBroadcast]</span></font><font face="Arial">section's </font><font face="Courier New"><span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">DestinationIPs</span></font><font face="Arial">
+item, separated by a single space, e.g.</font></p>
+<p style="margin-bottom: 5"><font face="Courier New">
+<span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">DestinationIPs=127.0.0.1
+192.168.1.11</span></font></p>
+<p style="margin-bottom: 5"><font face="Arial">To determine your computer's IPv4
+address, direct windows top open a <strong>Cmd</strong> window, enter the </font><font face="Courier New"><span style="color: rgb(51, 51, 51); font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.899999618530273px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">ipconfig</span></font><font face="Arial">
+command, and strike the enter key; your computer's IPv4 address will be included
+in the results displayed by this command.</font></p>
+<p style="margin-bottom: 5"><font face="Arial">If N1MM is running while you make
+changes to its </font><font face="Courier New">
+Logger.ini</font><font face="Arial">  file, those changes will be overwritten
+when N1MM terminates.<br></font></p>
+<p class="auto-style9">Configuring the Gateway</p>
+<ol>
+	<li>
+	<p class="auto-style12">check the <strong>Lookup previous QSOs</strong> box 
+	to direct DXKeeper to display previous QSOs with the logged callsign</p>
+	</li>
+	<li>
+	<p class="auto-style12">check the <strong>Query Callbook</strong> box to 
+	direct DXKeeper to perform a callbook lookup and augment the information in 
+	the logged QSO with the results of that lookup</p>
+	</li>
+	<li>
+	<p class="auto-style12">check the <strong>Upload to eQSL.cc</strong> box to 
+	direct DXKeeper to upload the logged QSO to eQSL.cc</p>
+	</li>
+	<li>
+	<p class="auto-style12">check the <strong>Upload to LoTW</strong> box to 
+	direct DXKeeper to upload the logged QSO to LoTW</p>
+	</li>
+	<li>
+	<p class="auto-style12">check the <strong>Upload to Club Log</strong> box to 
+	direct DXKeeper to upload the logged QSO to Club Log</p>
+	</li>
+	<li>
+	<p class="auto-style11"><span class="auto-style1">check the <strong>Log 
+	debugging information</strong> box to create an errorlog.txt file containing 
+	diagnostic information</span><br></p>
+	</li>
+</ol>
+<p class="auto-style1">If you
+modify the <strong>Base Port</strong> in the <strong>Network Service</strong> 
+panel on the <strong>Defaults</strong> tab of DXKeeper's <strong>Configuration</strong> 
+window, terminate and then restart the Gateway.<br></p>
+&nbsp;<p style="margin-bottom: 5"><font face="Arial"><b>Operation</b></font></p>
+<p style="margin-bottom: 5"><font face="Arial">You can start the Gateway,&nbsp;
+<a href="https://n1mmwp.hamdocs.com/setup/interfacing/">N1MM+</a>,
+<a href="https://www.dxlabsuite.com/dxkeeper/">DXKeeper</a>,
+<a href="https://www.dxlabsuite.com/dxview/">DXView</a> and
+<a href="https://www.dxlabsuite.com/pathfinder/">Pathfinder</a> in any order. The
+Gateway displays a small window that indicates whether it has
+&quot;connected&quot; with DXKeeper, DXView and Pathfinder, which it does automatically when 
+these applications start. </font></p>
+<p class="auto-style4">In N1MM or N1MM+, if typing a callsign and striking the
+<strong>Enter</strong> 
+	key logs the QSO to N1MM or N1MM+ respectively, the Gateway will also log the QSO to <font face="Arial">
+<a href="https://www.dxlabsuite.com/dxkeeper/">DXKeeper</a></font>.</p>
+<p class="auto-style4">In N1MM+ version 7336 or later, typing a callsign and striking the 
+<strong>Space</strong> bar will <font face="Arial">
+direct
+	<a href="https://www.dxlabsuite.com/dxview/">DXView</a> and
+	<a href="https://www.dxlabsuite.com/pathfinder/">Pathfinder</a> to perform 
+	&quot;lookup&quot; operations, if they are running. If the Gateway's <strong>Lookup 
+	previous QSOs</strong> box is checked,
+	<a href="https://www.dxlabsuite.com/dxkeeper/">DXKeeper</a> will also be 
+	directed to display all previous QSOs with the newly-logged callsign. Note: 
+the display of some web pages will cause
+<a href="https://www.dxlabsuite.com/pathfinder/">Pathfinder</a> to steal mouse 
+cursor focus from N1MM.</font></p>
+<p style="margin-bottom: 5"><font face="Arial">Clicking this window's <b>Help</b> button displays the web page you're
+now reading. </font></p>
+<p style="margin-bottom: 5"><font face="Arial">An indication in red font will appear if new entries have been
+placed in an Errorlog.txt file in the folder in which the Gateway resides; if
+this happens, please </font><a href="mailto:DXLab@groups.io"><font color="#0000FF" face="Arial"><u>report
+it</u></font></a><font face="Arial"> to the DXLab Discussion Group. During normal
+operation, the Gateway's main window can be minimized; its primary purpose is to
+permit the Gateway to be terminated when desired.</font></p>
+<p style="margin-bottom: 5"><font face="Arial">With the Gateway running, logging
+a QSO in&nbsp; <a href="https://n1mmwp.hamdocs.com/setup/interfacing/">N1MM+</a> will log a
+QSO with the following <a href="https://www.dxlabsuite.com/ADIF.htm#ADIF-defined Fields">ADIF
+fields</a> in <a href="https://www.dxlabsuite.com/dxkeeper/">DXKeeper</a>:</font></p>
+<ul>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">BAND</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">BAND_RX</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">CALL</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">COMMENT</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">CONTEST_ID</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">FREQ</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">FREQ_RX</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">GRIDSQUARE</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">MODE</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">QSO_DATE</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">NAME</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">OPERATOR</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">PFX</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">QTH</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">RST_RCVD</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">RST_SENT</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">SRX</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">SRX_STRING </font><font face="Arial">(populated
+    from N1MM's</font><font face="Arial"> </font><font face="Courier New">Exchange1</font><font face="Arial">
+    field)</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">STATION_CALLSIGN</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">STX</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">TIME_ON</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Courier New">RX_PWR (</font><span class="auto-style2">K</span><span class="auto-style1"> 
+	or </span><span class="auto-style2">KW</span><span class="auto-style1"> will 
+	be recorded as 1000; </span><span class="auto-style2">QRP</span><span class="auto-style1"> 
+	will be recorded as 5)</span></li>
+</ul>
+<p><font face="Arial">If you have questions or suggestions, please </font>
+<a href="mailto:DXLab@groups.io"><font color="#0000FF" face="Arial"><u>send
+them via email</u></font></a><font face="Arial"> to the DXLab Discussion Group.</font></p>
+<p><font face="Arial">Other members of the <a href="https://www.dxlabsuite.com/">DXLab</a>
+suite of free amateur radio software:</font></p>
+<ul>
+  <li>
+    <p style="margin-bottom: 5"><font face="Arial"><a href="https://www.dxlabsuite.com/commander/">Commander</a>
+    - controls your Alinco, Elecraft, FlexRadio, Icom, Kenwood, TenTec, or Yaesu
+    radio from your PC, displays settings for frequency-dependent devices, and
+    provides a bandspread showing DX spots</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Arial"><a href="https://www.dxlabsuite.com/dxkeeper/">DXKeeper</a>
+    - </font><font color="#000000" face="Arial">record</font><font face="Arial"><font color="#000000">s
+    and manages QSOs, synchronizes with <a href="https://www.eqsl.cc/qslcard/Index.cfm">eQSL.cc</a>
+    and <a href="https://www.arrl.org/lotw/">LotW</a>,&nbsp;</font> <font color="#000000" face="Arial">tracks
+    progress towards DXing objectives</font>, and <font color="#000000" face="Arial">prints
+    QSL cards or labels, addresses envelopes or prints address labels</font></font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Arial"><a href="https://www.dxlabsuite.com/pathfinder/">Pathfinder</a>
+    - locates QSL information from more than 100 web-accessible sources</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Arial"><a href="https://www.dxlabsuite.com/winwarbler/">WinWarbler</a>
+    - conducts QSOs using PSK31 or PSK63 with simultaneous three-channel
+    decoding and display, or using RTTY with simultaneous two-channel decoding
+    and display, or using CW (generation only)</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Arial"><a href="https://www.dxlabsuite.com/dxview/">DXView</a>
+    - displays DXCC info and country maps, controls antenna rotators, and plots
+    DX spots, beam headings, solar position, and the solar terminator on a world
+    map</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Arial"><a href="https://www.dxlabsuite.com/propview/">PropView</a>
+    - displays minimum and maximum useable frequencies between specified
+    locations and monitors the IARU/NCDXF HF Beacon network</font></li>
+  <li>
+    <p style="margin-bottom: 5"><font face="Arial"><a href="https://www.dxlabsuite.com/spotcollector/">SpotCollector</a>
+    - collects and aggregates spots from multiple sources -- including packet,
+    Telnet, and IRC -- to create a local database that you can display, sort,
+    and filter in real time</font></li>
+</ul>
+
+</body>
+
+</html>
